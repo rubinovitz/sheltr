@@ -5,7 +5,7 @@ var routes = require('./routes');
 var url = require('url');
 var whiskers = require('whiskers');
 
-var port = process.env.PORT || process.argv[2] || 8127;
+var port = process.env.PORT || process.argv[2] || 8000;
 var redisUrl = process.env.REDISTOGO_URL && 
   url.parse(process.env.REDISTOGO_URL);
 var redisOptions = redisUrl && {
